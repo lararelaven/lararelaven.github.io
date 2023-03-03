@@ -1,5 +1,5 @@
 :root{
-    --navbar-height: 92px;
+    --navbar-height: 5.75rem;
     --main-color: black;
     --secondary-color: orange;
     --text-color: whitesmoke;
@@ -15,7 +15,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 40px;
+    padding: 0 2.5rem;
 }
 
 .logo{
@@ -44,6 +44,10 @@ nav{
     z-index: -1;
 }
 
+.logo:hover::before{
+    opacity: 1;
+}
+
 .logo h1{
     font-size: 35px;
 }
@@ -56,6 +60,41 @@ nav{
 
 
 nav ul{
+    height: 100%;
+    margin: 0;
     display: flex;
-    gap: 20px;
+    align-items: center;
 }
+
+nav ul > li{
+    height: inherit;
+    display: flex;
+}
+
+nav ul > li > a{
+    color: var(--text-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    height: 100%;
+    line-height: var(--navbar-height);
+    padding: 0 20px;
+    background-color: rgb(119, 67, 30);
+}
+
+nav ul > li > a:hover{
+    background-color: rgb(184, 103, 46);
+}
+
+.hero{
+    width: 100vw;
+    height: 600px;
+    background: linear-gradient(0deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.2) 100%), url(../img/steven-shircliff-N21z4eG8aKg-unsplash\ \(1\).jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
