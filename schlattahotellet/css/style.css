@@ -104,6 +104,10 @@ nav ul > li > a:hover{
     gap: 1rem;
 }
 
+.hero h1{
+    font-size: clamp(2rem, 5vw, 4rem);
+}
+
 .grid-container{
     display: grid;
     width: 95%;
@@ -152,4 +156,8 @@ nav ul > li > a:hover{
         "b b"
         "c c";
     }
+    :root{
+       --navbar-height: 2.75rem; 
+    }
+    
 }

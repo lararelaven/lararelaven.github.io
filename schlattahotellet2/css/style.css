@@ -99,6 +99,10 @@ nav ul > li > a:hover{
     flex-direction: column;
 }
 
+.hero h1{
+    font-size: clamp(2rem, 5vw, 4rem);
+}
+
 .grid-container{
     display: grid;
     margin: 0.5rem;
@@ -139,6 +143,27 @@ nav ul > li > a:hover{
 .active{
     background-color: rgba(255, 166, 0, 0.722);
     border-bottom: 12px solid black;
+}
+
+@media screen and (max-width: 780px){
+    header nav > ul{
+
+    }
+
+    main .grid-container{
+        grid-template-areas:
+        "a a a"
+        "b b b"
+        "c c c"
+        "d d d";
+        grid-auto-rows: 15rem;
+    }
+}
+
+@media screen and (max-width: 480px){
+    main .grid-container{
+        grid-auto-rows: 10rem;
+    }
 }
 
 
